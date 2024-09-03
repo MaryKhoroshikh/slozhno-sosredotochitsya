@@ -3,3 +3,42 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header
+
+.decorated-zone
+
+.header__theme-menu
+
+.header__theme-menu-list
+
+.header__theme-menu-item
+
+.header__theme-menu-button
+
+.header__theme-menu-button_active
+
+.header__theme-menu-button_type_auto
+
+/*мое именование классов*/
+.header__title
+
+.header_text
+
+.title-decor
+
+.element-decor
+
+.title
+
+.card
+
+.card__title
+
+.card__text
+
+.card__advice
+
+.img /*возможно неудачное имя*/
+
+.footer__title
