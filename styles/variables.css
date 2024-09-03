@@ -2,3 +2,27 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --bg-color: #000028;
+  --title-decor-color: #ff0070;
+
+  --card-text-color: #F1B2CE;
+  --card-title-color: #000028;
+  --title-color: #db00ff;
+  --section-title-color: #FF0070;
+
+  --font: 'IBM Plex mono', sans-serif;
+
+  --font-size: 18px;
+  --font-size-big: 157px;
+
+  /*отступы*/
+  --header-margin: 40px; /*60px*/
+  --footer-margin: 40px; /*60px*/
+  --section-between: 50px; /*80px*/
+  --section-grid-gap: 20px;
+  --header__theme-menu-button-gap: 10px;
+  --card__advice-margin-block-start: 20px;
+  --card__text-margin-block-start: 10px;
+}

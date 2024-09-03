@@ -29,6 +29,8 @@
 
 .element-decor
 
+.section /*display: grid;*/
+
 .section-title
 
 .card
@@ -37,7 +39,11 @@
 
 .card__text
 
+.link
+
 .card__advice
+
+.section-img /*10px, to change gap on mobile device*/
 
 .img /*возможно неудачное имя*/
 
