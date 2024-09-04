@@ -45,13 +45,13 @@
         </ul>
       </nav>
       <h1 class="header__title">no focus</h1>
-      <p class="header_text title-decor">
+      <p class="header__text title-decor">
         Что делать, когда не можешь делать ничего
-Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+        <br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо
       </p>
-      <div class="element-decor">REC</div>
+      <div class="element-decor" aria-hidden="true">REC</div>
     </header>
-    <main>
+    <main class="main">
       <section class="section">
         <h2 class="section-title">Почему сосредоточиться так сложно</h2>
         <div class="card">
@@ -59,9 +59,9 @@
           <p class="card__text">
             Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует. Исследователи 
             <a class="link" href="https://dana.org/article/multicosts-of-multitasking/">
-              выяснили
+              выяснили,
             </a>
-            , что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.
+            что мозгу тяжело концентрироваться даже на двух делах одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.
           </p>
         </div>
         <div class="card">
@@ -108,9 +108,9 @@
           <p class="card__text">
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент 
             <a class="link" href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328">
-              показал
+              показал,
             </a>
-            , что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.
+            что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.
           </p>
           <h4 class="card__advice title-decor">Хорошо ешьте</h4>
           <p class="card__text">
@@ -125,23 +125,48 @@
       <section class="section section-img">
         <h2 class="section-title">А можно в картинках?</h2>
         <div>
-          <img class="img" src="./images/sunset.png" alt="закат">
+          <img 
+            class="img" 
+            src="./images/sunset.png" 
+            alt="закат"
+            loading="lazy"
+          >
         </div>
         <div>
-          <img class="img" src="./images/ice-cream.png" alt="мороженое">
+          <img 
+            class="img" 
+            src="./images/ice-cream.png" 
+            alt="мороженое"
+            loading="lazy"
+          >
         </div>
         <div>
-          <img class="img" src="./images/tape.png" alt="кассета с магнитной лентой">
+          <img 
+            class="img" 
+            src="./images/tape.png" 
+            alt="кассета с магнитной лентой"
+            loading="lazy"
+            >
         </div>
         <div>
-          <img class="img" src="./images/books.png" alt="стопка книг">
+          <img 
+            class="img" 
+            src="./images/books.png" 
+            alt="стопка книг"
+            loading="lazy"
+          >
         </div>
         <div>
-          <img class="img" src="./images/street.png" alt="пустынная улица">
+          <img 
+            class="img" 
+            src="./images/street.png" 
+            alt="пустынная улица"
+            loading="lazy"
+          >
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <h2 class="footer__title">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>

@@ -5,24 +5,23 @@
 
 :root {
   --bg-color: #000028;
-  --title-decor-color: #ff0070;
+  --bg-decor-color: #ff0070;
 
-  --card-text-color: #F1B2CE;
+  --card-text-color: #f1b2CE;
   --card-title-color: #000028;
-  --title-color: #db00ff;
-  --section-title-color: #FF0070;
+  --main-title-color: #db00ff;
+  --accent-color: #ff0070;
 
   --font: 'IBM Plex mono', sans-serif;
 
   --font-size: 18px;
-  --font-size-big: 157px;
 
   /*отступы*/
-  --header-margin: 40px; /*60px*/
-  --footer-margin: 40px; /*60px*/
+  --header-margin: 10px; /*20px*/
+  --main-margin-b: 40px; /*60px*/
   --section-between: 50px; /*80px*/
   --section-grid-gap: 20px;
   --header__theme-menu-button-gap: 10px;
-  --card__advice-margin-block-start: 20px;
-  --card__text-margin-block-start: 10px;
+  --card__advice-margin-b-s: 20px;
+  --card__text-margin-b-s: 10px;
 }
