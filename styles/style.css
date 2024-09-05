@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   inline-size: 375px; /*100vw сейчас mobile*/
-  background-image: url(/images/cover-image-light.png);
+  background-image: url(/images/cover-image-dark.png);
   background-color: var(--bg-color);
   background-size: auto 100vh;
   background-position: center;
@@ -173,6 +173,7 @@
 .link {
   text-decoration: none;
   text-shadow: 1px 1px 0 var(--accent-color);
+  line-height: 0.5;
 }
 
 .link:hover {
