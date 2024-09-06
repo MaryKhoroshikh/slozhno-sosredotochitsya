@@ -46,15 +46,3 @@ button:focus,
 a:focus {
   outline: none;
 }
-
-/*какого-то хера код ниже
-не работает из файла style.css*/
-.header__title {
-  font-family: var(--font);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  /*clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) */
-  font-weight: bold;
-  line-height: 0.825;
-  color: var(--main-title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
-}
