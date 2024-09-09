@@ -10,7 +10,6 @@
   --main-title-color: #db00ff;
   --accent-color: #ff0070;
   --nav-color: #ff0070;
-  --main-title-accent-color: #ff0070;
 
   --font: 'IBM Plex mono', sans-serif;
   --font-size: 18px;
@@ -43,7 +42,7 @@
   --accent-color: #ff8dcB;
   --nav-color: #353430;
 }
-
+/*
 @media (width >= 768px) {
   :root {
     --header-margin: 20px;
