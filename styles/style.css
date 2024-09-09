@@ -19,7 +19,7 @@
   color: var(--nav-color);
 }
 
-.header::before {
+.decorated-zone::before {
   content: '';
   position: absolute;
   inset-block-end: 10px;
@@ -30,7 +30,7 @@
   border-block-end: 1px solid var(--nav-color);
 }
 
-.header::after {
+.decorated-zone::after {
   content: '';
   position: absolute;
   inset-block-start: 10px;
@@ -217,28 +217,6 @@
   line-height: 0.825;
   color: var(--main-title-color);
   text-shadow: 2px 2px 0 var(--main-title-accent-color);
-}
-
-.footer::before {
-content: '';
-position: absolute;
-inset-block-end: 10px;
-inset-inline-start: 10px;
-inline-size: 25px;
-block-size: 25px;
-border-inline-start: 1px solid var(--nav-color);
-border-block-end: 1px solid var(--nav-color);
-}
-
-.footer::after {
-content: '';
-position: absolute;
-inset-block-start: 10px;
-inset-inline-end: 10px;
-inline-size: 25px;
-block-size: 25px;
-border-inline-end: 1px solid var(--nav-color);
-border-block-start: 1px solid var(--nav-color);
 }
 
 /*делаем адаптив*/
