@@ -10,6 +10,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  letter-spacing: 50%;
   }
 
 .header {
@@ -18,15 +19,15 @@
   position: relative;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  gap: 0;
   color: var(--nav-color);
+  gap: 24px;
 }
 
 .decorated-zone::before {
   content: '';
   position: absolute;
-  inset-block-end: var(--header-margin);
-  inset-inline-start: var(--header-margin);
+  inset-block-end: var(--main-gap);
+  inset-inline-start: var(--main-gap);
   inline-size: 25px;
   block-size: 25px;
   border-inline-start: 1px solid var(--nav-color);
@@ -36,8 +37,8 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  inset-block-start: var(--header-margin);
-  inset-inline-end: var(--header-margin);
+  inset-block-start: var(--main-gap);
+  inset-inline-end: var(--main-gap);
   inline-size: 25px;
   block-size: 25px;
   border-inline-end: 1px solid var(--nav-color);
@@ -47,7 +48,8 @@
 .header__theme-menu {
   justify-self: end;
   align-self: end;
-  margin: var(--header-margin);
+  margin: var(--main-gap);
+  padding-block-end: 25px;
 }
 
 .header__theme-menu-list {
@@ -57,22 +59,19 @@
 }
 
 .header__theme-menu-item {
-  
+  color: inherit;
+  font-family: var(--font);
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 1;
 }
 
 .header__theme-menu-button {
   background-color: transparent;
   cursor: pointer;
-  color: inherit;
   text-transform: lowercase;
-  text-align: center;
-  font-family: var(--font);
-  font-size: var(--font-size);
-  font-weight: 400;
-  line-height: 1;
-  color: inherit;
+  padding: 0 13px 6px;
   border: 1px solid transparent;
-  padding: 0 13px 5px;
 }
 
 .header__theme-menu-button_active {
@@ -89,6 +88,8 @@
 }
 
 .header__main-title {
+  letter-spacing: -0.02em;
+  margin-inline-start: 10px;
   align-self: center;
   font-family: var(--font);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -99,17 +100,18 @@
 }
 
 .header__text {
+  letter-spacing: 0.01rem;
   font-family: var(--font);
   font-size: var(--font-size);
   font-weight: bold;
   line-height: 1.3;
   color: var(--card-title-color);
-  margin-inline-end: var(--header-margin);
+  margin-inline: var(--main-gap);
   block-size: fit-content;
   justify-self: end;
   align-self: start;
   padding-inline-end: 10px;
-  margin-block-start: calc(var(--header-margin)* 2);
+  margin-block-start: calc(var(--main-gap)* 2);
 }
 
 .title-decor {
@@ -119,7 +121,7 @@
 .element-decor {
   position: absolute;
   inset-inline-end: 38px;
-  inset-block-start: var(--header-margin);
+  inset-block-start: var(--main-gap);
   font-family: var(--font);
   font-size: var(--font-size);
   font-weight: 400;
@@ -150,7 +152,8 @@
 .section {
   display: grid;
   gap: var(--section-grid-gap);
-  padding-inline: var(--section-grid-gap);
+  padding-inline: var(--main-gap);
+  letter-spacing: 0.01rem;
 }
 
 .section-title {
@@ -159,6 +162,7 @@
   font-weight: bold;
   line-height: 1.3;
   color: var(--accent-color);
+  white-space: inherit
 }
 
 .section-img__title {
@@ -179,7 +183,7 @@
   font-weight: 400;
   line-height: 1.3;
   color: var(--card-text-color);
-  padding-inline-end: 10px;
+  /*padding-inline-end: 10px; для 768px и шире*/
   margin-block-start: var(--card__text-margin-b-s);
 }
 
@@ -226,6 +230,8 @@
 }
 
 .footer__title {
+  letter-spacing: -0.02em;
+  padding: var(--main-gap);
   font-family: var(--font);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
@@ -236,8 +242,12 @@
 
 /*делаем адаптив
 @media (width >= 768px) {
+  .header__theme-menu {
+    align-self: end;
+  }
+
   .header__text { /*вернуть ширину 100vi
-    inline-size: calc((768px - 2 * var(--header-margin)) / 2);
+    inline-size: calc((768px - 2 * var(--main-gap)) / 2);
   }
 
   .element-decor {
@@ -306,7 +316,7 @@
 
 @media (width >= 1024px) {
   .header {
-    gap: var(--header-margin);
+    gap: var(--main-gap);
   }
   
   .header__main-title {

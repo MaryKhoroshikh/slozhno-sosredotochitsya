@@ -13,14 +13,14 @@
 
   --font: 'IBM Plex mono', sans-serif;
   --font-size: 18px;
+  --line-height: ;
 
   /*отступы*/
-  --header-margin: 10px; /*20px*/
+  --main-gap: 10px; /*20px*/
   --main-margin-b: 40px; /*60px*/
   --section-between: 50px; /*80px*/
   --section-img-gap: 10px; /*20px*/
   --section-grid-gap: 20px;
-  --header__theme-menu-button-gap: 10px;
   --card__advice-margin-b-s: 20px;
   --card__text-margin-b-s: 10px;
 }
@@ -45,7 +45,7 @@
 /*
 @media (width >= 768px) {
   :root {
-    --header-margin: 20px;
+    --main-gap: 20px;
     --main-margin-b: 60px;
     --section-between: 80px;
     --section-img-gap: 20px;
