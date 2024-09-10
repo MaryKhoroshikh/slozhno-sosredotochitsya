@@ -41,7 +41,7 @@
   --accent-color: #ff8dcB;
   --nav-color: #353430;
 }
-/*
+
 @media (width >= 768px) {
   :root {
     --main-gap: 20px;
@@ -49,4 +49,4 @@
     --section-between: 80px;
     --section-img-gap: 20px;
   }
-}*/
+}
