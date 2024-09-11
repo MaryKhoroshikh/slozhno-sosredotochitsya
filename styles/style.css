@@ -79,6 +79,7 @@
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--nav-color);
+  outline-color: var(--nav-color-hover);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -97,7 +98,6 @@
 }
 
 .header__text {
-  letter-spacing: 0.01rem;
   font-family: var(--font);
   font-size: var(--font-size);
   font-weight: bold;
@@ -152,7 +152,6 @@
 .section {
   display: grid;
   gap: var(--section-grid-gap);
-  letter-spacing: 0.01rem;
 }
 
 .section-title {
@@ -186,16 +185,16 @@
 
 .link {
   text-decoration: none;
-  text-shadow: 1px 1px 0 var(--accent-color);
-  line-height: 0.5;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .link:hover {
-  text-decoration: underline;
+  border-block-end: 1px solid var(--card-text-color);
 }
 
 .link:focus-visible {
-  border: 1px solid var(--card-text-color);
+  outline: 1px solid var(--card-text-color);
+  outline-offset: -1px;
 }
 
 .card__advice {
@@ -219,7 +218,7 @@
 
 .footer {
   inline-size: 100%;
-  min-inline-size: 668px;
+  min-block-size: 668px;
   block-size: 100vb;
   display: grid;
   position: relative;
@@ -321,10 +320,6 @@
 @media (768px <= width < 1024px) {
   .header__theme-menu {
     margin-block-start: 105px;
-  }
-
-  .section {
-    letter-spacing: 0.01rem;
   }
   
   .section-what .card {

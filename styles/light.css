@@ -10,6 +10,7 @@
   --main-title-color: #ffc2e6;
   --accent-color: #ff8dcB;
   --nav-color: #353430;
+  --nav-color-hover: rgba(53, 52, 48, 0.5);
 }
 
 .page.theme_light {
@@ -32,6 +33,7 @@
     --main-title-color: #ffc2e6;
     --accent-color: #ff8dcB;
     --nav-color: #353430;
+    --nav-color-hover: rgba(53, 52, 48, 0.5);
   }
   .element-decor {
     display: none;
