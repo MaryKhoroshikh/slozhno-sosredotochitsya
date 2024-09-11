@@ -11,7 +11,7 @@
   --accent-color: #ff0070;
   --nav-color: #ff0070;
 
-  --font: 'IBM Plex mono', sans-serif;
+  --font: 'IBM Plex mono', monospace;
   --font-size: 18px;
   --font-size-M: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-size-L: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -22,24 +22,6 @@
   --section-between: 50px; /*80px*/
   --section-grid-gap: 20px;
   --card__text-margin: 10px;
-}
-
-:root .theme_dark {
-  --bg-color: #000028;
-  --card-text-color: #f1b2CE;
-  --card-title-color: #000028;
-  --main-title-color: #db00ff;
-  --accent-color: #ff0070;
-  --nav-color: #ff0070;
-}
-
-:root .theme_light {
-  --bg-color: #fff1f7;
-  --card-text-color: #353430;
-  --card-title-color: #353430;
-  --main-title-color: #ffc2e6;
-  --accent-color: #ff8dcB;
-  --nav-color: #353430;
 }
 
 @media (width >= 768px) {

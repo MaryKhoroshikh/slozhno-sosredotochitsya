@@ -3,6 +3,14 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root .theme_dark {
+  --bg-color: #000028;
+  --card-text-color: #f1b2CE;
+  --card-title-color: #000028;
+  --main-title-color: #db00ff;
+  --accent-color: #ff0070;
+  --nav-color: #ff0070;
+}
 
 .page.theme_dark {
   background-image: url(/images/cover-image-dark.png);
