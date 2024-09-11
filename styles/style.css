@@ -154,6 +154,10 @@
   gap: var(--section-grid-gap);
 }
 
+.card {
+  inline-size: 100%;
+}
+
 .section-title {
   font-family: var(--font);
   font-size: var(--font-size);
@@ -273,7 +277,7 @@
     grid-auto-rows: minmax(min-content, max-content);
   }
 
-  .card {
+  .card:not(:has(.section-what)) {
     grid-column-start: 2;
     grid-column-end: span 2;
   }
@@ -350,24 +354,13 @@
   .header__theme-menu-list {
     flex-direction: row;
   }
-
+  
   .section-what .section-title {
-    grid-area: title;
+    max-inline-size: calc((100vi - 2 * var(--main-gap)) / 3);
+    grid-column: span 3;
   }
-
-  .card-multitask {
-    grid-area: card-multitask;
-  }
-
-  .card-food {
-    grid-area: card-food;
-  }
-
-  .card-gadgets {
-    grid-area: card-gadgets;
-  }
-
-  .section-what {
-    grid-template-areas: "title . ." "card-multitask card-food card-gadgets";
+  
+  .section-what .card {
+    grid-column: span 1;
   }
 }
