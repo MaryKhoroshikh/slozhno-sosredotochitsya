@@ -107,6 +107,7 @@
   justify-self: end;
   align-self: start;
   margin-block-start: 35px;
+  white-space: pre-line;
 }
 
 .title-decor {
