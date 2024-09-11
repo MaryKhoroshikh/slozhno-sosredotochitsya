@@ -15,7 +15,7 @@
 
 .header {
   inline-size: 100%;
-  min-inline-size: 668px;
+  min-block-size: 668px;
   block-size: 100vb;
   position: relative;
   display: grid;
