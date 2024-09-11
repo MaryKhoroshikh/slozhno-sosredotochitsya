@@ -13,11 +13,11 @@
   --nav-color-hover: rgba(255, 0, 112, 0.5);
 }
 
-.page.theme_dark {
+.page .theme_dark {
   background-image: url(/images/cover-image-dark.png);
 }
 
-.page.theme_dark .element-decor {
+.page .theme_dark .element-decor {
   display: block;
 }
 

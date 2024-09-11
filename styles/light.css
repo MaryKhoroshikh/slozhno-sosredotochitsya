@@ -13,15 +13,15 @@
   --nav-color-hover: rgba(53, 52, 48, 0.5);
 }
 
-.page.theme_light {
+.page .theme_light {
   background-image: url(/images/cover-image-light.png);
 }
 
-.page.theme_light .element-decor {
+.page .theme_light .element-decor {
   display: none;
 }
 
-.page.theme_light .section-title {
+.page .theme_light .section-title {
   color: var(--card-title-color);
 }
 
@@ -35,12 +35,15 @@
     --nav-color: #353430;
     --nav-color-hover: rgba(53, 52, 48, 0.5);
   }
+
   .element-decor {
     display: none;
   }
-  .section-title {
+
+  .page.theme_light .section-title {
     color: var(--card-title-color);
   }
+
   .page {
     background-image: url(/images/cover-image-light.png);
   }
