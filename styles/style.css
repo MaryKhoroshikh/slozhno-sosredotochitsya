@@ -271,12 +271,9 @@
   }
 
   .card {
+    padding-inline-start: 5px;
     grid-column-start: 2;
     grid-column-end: span 2;
-  }
-
-  .card {
-    padding-inline-start: 5px;
   }
 
   .section-img__title {
