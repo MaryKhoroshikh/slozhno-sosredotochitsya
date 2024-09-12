@@ -106,6 +106,7 @@
   justify-self: end;
   align-self: start;
   white-space: pre-line;
+  margin-block-start: 40px;
 }
 
 .title-decor {
@@ -114,7 +115,7 @@
 
 .element-decor {
   position: absolute;
-  inset-inline-end: 28px;
+  inset-inline-end: 38px;
   margin-block-start: var(--main-gap);
   font-family: var(--font);
   font-size: var(--font-size);
@@ -249,10 +250,6 @@
   .header__theme-menu {
     margin-block-start: var(--main-gap);
   }
-
-  .header__text {
-    margin-block-start: var(--main-margin-b);
-  }
 }
 
 /*делаем адаптив*/
@@ -263,6 +260,10 @@
 
   .header__text {
     inline-size: calc((100vi - 2 * var(--main-gap)) / 2);
+  }
+
+  .element-decor {
+    inset-inline-end: 48px;
   }
 
   .section {
@@ -322,10 +323,6 @@
   .header__text {
     margin-block-start: 50px;
   }
-  
-  .card {
-    padding-inline-start: 5px;
-  }
 
   .section-what .card {
     grid-column-start: 1;
@@ -337,7 +334,7 @@
   .header {
     gap: var(--main-gap);
   }
-  
+
   .header__main-title {
     font-size: var(--font-size-L);
   }
@@ -349,7 +346,6 @@
   .header__theme-menu {
     justify-self: center;
     align-self: start;
-    margin-block-start: var(--main-gap);
   }
 
   .header__theme-menu-list {
