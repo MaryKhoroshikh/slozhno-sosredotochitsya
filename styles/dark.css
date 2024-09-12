@@ -7,17 +7,38 @@
   --bg-color: #000028;
   --card-text-color: #f1b2CE;
   --card-title-color: #000028;
+  --section-title-color: #ff0070;
   --main-title-color: #db00ff;
   --accent-color: #ff0070;
   --nav-color: #ff0070;
   --nav-color-hover: rgba(255, 0, 112, 0.5);
 }
 
-.page .theme_dark {
-  background-image: url(/images/cover-image-dark.png);
+.page.theme_dark {
+  background-image: url(../images/cover-image-dark.png);
 }
 
-.page .theme_dark .element-decor {
+.theme_dark .element-decor {
   display: block;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --card-text-color: #f1b2CE;
+    --card-title-color: #000028;
+    --section-title-color: #ff0070;
+    --main-title-color: #db00ff;
+    --accent-color: #ff0070;
+    --nav-color: #ff0070;
+    --nav-color-hover: rgba(255, 0, 112, 0.5);
+  }
+  
+  .page {
+    background-image: url(../images/cover-image-dark.png);
+  }
+  
+  .element-decor {
+    display: block;
+  }
+}
