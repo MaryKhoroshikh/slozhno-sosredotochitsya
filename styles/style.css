@@ -2,8 +2,8 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  /* чтобы избежать горизонтальной полосы прокрутки*/
-  inline-size: calc(100vi - 20px);
+  /* чтобы избежать горизонтальной полосы прокрутки
+  inline-size: calc(100vi - 20px);*/
   background-image: url(../images/cover-image-dark.png);
   background-color: var(--bg-color);
   background-size: cover;
@@ -247,20 +247,16 @@
 
 @media (width < 768px) {
   .header__theme-menu {
-    margin-block-start: 10px;
+    margin-block-start: var(--main-gap);
   }
 
   .header__text {
-    margin-block-start: 40px;
+    margin-block-start: var(--main-margin-b);
   }
 }
 
 /*делаем адаптив*/
 @media (width >= 768px) {
-  .header__theme-menu {
-    margin-inline-end: 0px;
-  }
-
   .header__main-title {
     margin-inline-start: calc(0px - var(--main-gap));
   }
@@ -277,6 +273,10 @@
   .card {
     grid-column-start: 2;
     grid-column-end: span 2;
+  }
+
+  .card {
+    padding-inline-start: 5px;
   }
 
   .section-img__title {
@@ -320,7 +320,11 @@
 
 @media (768px <= width < 1024px) {
   .header__theme-menu {
-    margin-block-start: 105px;
+    margin-block-start: 110px;
+  }
+
+  .header__text {
+    margin-block-start: 50px;
   }
   
   .section-what .card {
