@@ -272,7 +272,6 @@
 
   .card {
     grid-column-start: 2;
-    grid-column-end: span 2;
   }
 
   .section-how .section-title {
@@ -334,19 +333,14 @@
   .section-what .card {
     grid-column: span 3;
   }
-  
-  .section-how .card {
-    padding-inline-start: 6px;
-  }
-  
+
   .section-how .card__title {
-    margin-inline-start: 6px;
+    grid-column-start: 2;
   }
-  
-  .section-why .card {
-    padding-inline-start: 6px;
+
+  .section-why, .section-how {
+    grid-template-columns: 1fr 2fr;
   }
-  
 }
 
 @media (width >= 1024px) {
@@ -376,15 +370,11 @@
     grid-column: span 3;
   }
   
+  .card {
+    grid-column-end: span 2;
+  }
+
   .section-what .card {
     grid-column: span 1;
-  }
-
-  .section-what .card:last-of-type:nth-of-type(3n+1) {
-    grid-column: span 3;
-  }
-
-  .section-what .card:last-of-type:nth-of-type(3n+2) {
-    grid-column: span 2;
   }
 }
